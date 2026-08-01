@@ -562,7 +562,7 @@
             
             { value: "abc_plus_ces", label: "ABC + CES", rankType: "abc_plus_ces_rank", formula: "\\#\\{\\text{Top Five}\\} + \\sqrt{\\sum_{\\text{non-Top-Five}} x_i^2}" },
             
-            { value: "abc_multiply_ces", label: "ABC × CES", rankType: "abc_multiply_ces_rank", formula: "\\#\\{\\text{Top Five}\\} \\times \\sqrt{\\sum_{\\text{non-Top-Five}} x_i^2}" }
+            { value: "abc_multiply_ces", label: "ABC × CES", rankType: "abc_multiply_ces_rank", formula: "\\left(1+\\#\\{\\text{Top Five}\\}\\right) \\times \\left(1+\\sqrt{\\sum_{\\text{non-Top-Five}} x_i^2}\\right)" }
         ];
 
         document.addEventListener('DOMContentLoaded', function() {
